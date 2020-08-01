@@ -17,7 +17,7 @@ class LeftSection extends React.Component {
                         
                     <img className="add-button__img" src="/images/add-blue.png"/>
 
-                    <h3 className="add-button__title">New</h3>
+                    <h3 className="add-button__title">Nuevo</h3>
 
                     <div className={this.props.showAddOptions ? "add-button__option-wrapper add-button__option-wrapper--show" : "add-button__option-wrapper"}>
                         <div className="add_button__option__add-folder-wrapper" onClick={this.props.createFolder}>

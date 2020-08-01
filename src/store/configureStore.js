@@ -24,7 +24,7 @@ export default () => {
     const store = createStore(
         combineReducers({
             auth: authReducer,
-            main:mainReducer,
+            main: ainReducer,
             files: fileReducer,
             folders: folderReducer,
             filter: filterReducer,

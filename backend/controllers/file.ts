@@ -30,19 +30,14 @@ class FileController {
 
 
         if (!req.user) {
-
             return;
         }
-    
         try {
             
     
             const user = req.user;
             const id = req.params.id;
-    
             const decryptedThumbnail = await this.chunkService.getThumbnail(user, id);
-        
-
             res.send(decryptedThumbnail);
     
         } catch (e) {

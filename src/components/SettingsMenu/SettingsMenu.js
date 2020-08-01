@@ -8,26 +8,16 @@ const SettingsMenu = (props) => (
         
 
         {/* HEADER */}
-
         <div className="settingsmenu__header">
-
-
             <div className="settingsmenu__header__box">
                 <img className="settingsmenu__header__image" src="images/gear_icon.png"/>
                 <h3 className="settingsmenu__header__title">Settings</h3>
             </div>
-        
-
             <img className="settingsmenu__header__button" src="/images/close_icon.png"
                 onClick={props.closeSettings}/>
-
         </div>
-
         <div className="settingsmenu_body">
-        
-
-            {/*Storage*/}
-
+            {/*Label Storage*/}
             {env.disableStorage ? undefined : 
             
                 <div className="settingsmenu__option">
@@ -44,12 +34,12 @@ const SettingsMenu = (props) => (
             
             }
 
-            {/*List Style*/}
+            {/*Label List Style*/}
 
             <div className="settingsmenu__option">
 
                 <div className="settingsmenu__option__title__wrapper">
-                    <p className="settingsmenu__option__title">Default List Style</p>
+                    <p className="settingsmenu__option__title">Estilo de presentacion de elementos</p>
                     <img className="settingsmenu__option__info__style" src="/images/info.svg"
                             onClick={props.infoStyle}/>
                 </div>
